@@ -6,7 +6,6 @@ import CodeIcon from '@material-ui/icons/Code';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import GroupIcon from '@material-ui/icons/Group';
 import HomeIcon from '@material-ui/icons/Home';
-import InfoIcon from '@material-ui/icons/Info';
 import LinkIcon from '@material-ui/icons/Link';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Link as RouterLink, Route } from 'react-router-dom';
@@ -51,12 +50,10 @@ function Header() {
         <Toolbar>
           <IconButton color="inherit" onClick={toggleDrawer} className={classes.menuButton}><MenuIcon/></IconButton>
           <Typography variant="h6" className={classes.title}>
-            <Route path='/' exact></Route>
-            <Route path='/projects' exact>Projects - </Route>
-            <Route path='/members' exact>Members - </Route>
-            <Route path='/friends' exact>Friends - </Route>
-            <Route path='/About' exact>About - </Route>
-            {Data.site_name}
+            <Route path='/' exact>{Data.site_name}</Route>
+            <Route path='/projects' exact>Projects</Route>
+            <Route path='/members' exact>Members</Route>
+            <Route path='/friends' exact>Friends</Route>
           </Typography>
           {Data.repo_url ? <IconButton color="inherit" component={Link} href={Data.repo_url} target="_blank" rel="noreferrer"><GitHubIcon/></IconButton> : null}
         </Toolbar>
@@ -68,7 +65,6 @@ function Header() {
             <LinkItem icon={<CodeIcon/>} primary="Projects" to="/projects" onClick={toggleDrawer} />
             <LinkItem icon={<GroupIcon/>} primary="Members" to="/members" onClick={toggleDrawer} />
             <LinkItem icon={<LinkIcon/>} primary="Friends" to="/friends" onClick={toggleDrawer} />
-            <LinkItem icon={<InfoIcon/>} primary="About" to="/about" onClick={toggleDrawer} />
           </List>
       </Drawer>
     </React.Fragment>
