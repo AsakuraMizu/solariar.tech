@@ -4,7 +4,7 @@ import { Container } from '@material-ui/core';
 function Home() {
   return (
     <Container maxWidth="md">
-      home
+      本站设计师一直有一个从来不写首页的心把
     </Container>
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from '@material-ui/core';
 import ProCard from '../components/procard';
-import Data from '../data/projects'
+import Data from '../data/projects';
 
 function Projects() {
   return (
