@@ -3,7 +3,7 @@ var data = [
     "key": "eet",
     "name": "EET - Electrick",
     "star": "https://gitee.com/lcez-oi/EET-dev/badge/star.svg?theme=white",
-    "img": require('./img/eet.png'),
+    "img": "https://cdn.jsdelivr.net/gh/water-lift/cloud@latest/img/eet.png",
     "content": "An awesome local judger for OIers.",
     "developers": [
       {
