@@ -6,7 +6,7 @@ var Data = [
     "key": "waterlift",
     "name": "water_lift",
     "describe": "qwq",
-    "avatar": "https://cdn.jsdelivr.net/gh/water-lift/cloud@latest/img/wl.png",
+    "avatar": require("./img/wl.png"),
     "links": [
       {
         "key": "blog",
