@@ -39,13 +39,13 @@ function ProCard(props) {
             </Typography>
           ) : null}
         </CardContent>
-        {props.link ? 
+        {props.link ? (
           <CardActions>
             <Typography>
               <NLink href={props.link} text="View More" />
             </Typography>
           </CardActions>
-        : null}
+        ) : null}
       </Card>
       <hr />
     </React.Fragment>
